@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav>
+  <div class="nav-wrapper grey darken-3">
+    <a href="" class=" center brand-logo">Mi Información Académica</a>
+  </div>
+</nav>
+
+<app-miperfil ></app-miperfil>
+
+<div class="container">
+  <label margin="5px">Asistió a la Conferencia de Sistemas Expertos?</label>
+  <input type="text" [disabled]="estado" [(ngModel)]="respuesta" placeholder="{{respuesta}}"/> {{ respuesta }}
+</div>
+
+<router-outlet></router-outlet>

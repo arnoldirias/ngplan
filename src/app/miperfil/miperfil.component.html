@@ -1,0 +1,21 @@
+<h2 class="header" *ngIf="cambiarValor">{{ datos.nombre}}</h2>
+<div class="row" [class.dark] = "cambiarValor" >
+  <div class="col s6 m6">
+    <div class="card  green darken-3">
+      <div class="card-content white-text">
+        <p>Número de Cuenta:</p>
+        <span class="card-title">{{ datos.numCuenta}}</span>
+      </div>
+    </div>
+</div>
+<div class="col s6 m6">
+    <div class="card " [style.backgroundColor] = "cambiarValor ? 'green' : 'black'">
+      <div class="card-content white-text">
+        <p>Carrera:</p>
+        <span class="card-title">{{ getCarrera() }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-plan-estudio [datos]="datos"></app-plan-estudio>
